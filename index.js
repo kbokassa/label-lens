@@ -4,7 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function LabelLensApp() {
-  const [image, setImage] = useState<File | null>(null);
+ const [image, setImage] = useState(null);
+
   const [translatedText, setTranslatedText] = useState<string>("");
   const [showHalalWarnings, setShowHalalWarnings] = useState(true);
   const [showChildSafety, setShowChildSafety] = useState(true);
